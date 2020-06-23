@@ -68,5 +68,13 @@
 
 </body>
 
+<script>
+  $(document).ready(function(){
+    $('#mytable tr').click(function(){
+      var $th= $(this).find('th');
+      alert($th);
+      $(this).remove();
+    });
+  });
 </script>
 </html>
